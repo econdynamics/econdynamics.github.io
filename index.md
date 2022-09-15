@@ -10,6 +10,7 @@ The group is open to PhD students and faculty.
 Research can be preliminary. This is not a venue primarily geared toward formal presentation practice (e.g., job market talk practice). It is more oriented towards early-stage feedback. 
 
 ## Schedule & Logistics
+- [Fall 2022](2022F.md)
 - [Summer 2022](2022Su.md)
 - [Spring 2022](2022S.md) 
 - [Winter 2022](2022W.md)
