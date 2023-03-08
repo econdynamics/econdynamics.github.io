@@ -1,6 +1,6 @@
-## Econ Dynamics Working Group
+## Econ Dynamics and Financial Markets (EDFM) Working Group
 
-The Economic Dynamics and Financial Markets Working Group is a weekly session in which students present their work in topics primarily in macroeconomics and finance, broadly speaking. 
+The Economic Dynamics and Financial Markets (EDFM) Working Group is a weekly session in which students present their work in topics primarily in macroeconomics and finance, broadly speaking. 
 
 The group is open to PhD students and faculty.
 - Faculty Organizer: [Lars Hansen](https://larspeterhansen.org/)
