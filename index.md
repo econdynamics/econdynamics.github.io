@@ -4,12 +4,13 @@ The Economic Dynamics and Financial Markets (EDFM) Working Group is a weekly ses
 
 The group is open to PhD students and faculty.
 - Faculty Organizer: [Lars Hansen](https://larspeterhansen.org/)
-- Student Coordinator (2021-22, 2022-23): [Sangmin Oh](https://sangmino.github.io/)
-- Past Coordinators: Yiran Fan (2020-21), [Jane Li](https://www.lijianuchicago.com/) (2019-20)
+- Student Coordinator: Joanna Harris
+- Past Coordinators: [Sangmin Oh](https://sangmino.github.io/) (2021-22, 2022-23), Yiran Fan (2020-21), [Jane Li](https://www.lijianuchicago.com/) (2019-20)
 
 Research can be preliminary. This is not a venue primarily geared toward formal presentation practice (e.g., job market talk practice). It is more oriented towards early-stage feedback. 
 
 ## Schedule & Logistics
+- [Fall 2023](2023F.md)
 - [Summer 2023](2023Su.md)
 - [Spring 2023](2023S.md)
 - [Winter 2023](2023W.md)
