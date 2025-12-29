@@ -7,9 +7,10 @@ The group is open to PhD students and faculty.
 - Student Coordinator: Monica Barbosa
 - Past Coordinators: Joanna Harris (2023-24, 2024-25), [Sangmin Oh](https://sangmino.github.io/) (2021-22, 2022-23), Yiran Fan (2020-21), [Jane Li](https://www.lijianuchicago.com/) (2019-20)
 
-Research can be preliminary. This is not a venue primarily geared toward formal presentation practice (e.g., job market talk practice). It is more oriented towards early-stage feedback. 
+Research can be preliminary. This is not a venue primarily geared toward formal presentation practice (e.g., job market talk practice). It is more oriented towards early-stage feedback. Please leave time at the end of your talk for discussion.
 
 ## Schedule & Logistics
+- [Winter 2026] (2026W.md)
 - [Fall 2025](2025F.md)
 - [Summer 2025](2025Su.md)
 - [Spring 2025](2025S.md)
