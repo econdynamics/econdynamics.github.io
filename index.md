@@ -10,6 +10,7 @@ The group is open to PhD students and faculty.
 Research can be preliminary. This is not a venue primarily geared toward formal presentation practice (e.g., job market talk practice). It is more oriented towards early-stage feedback. Please leave time at the end of your talk for discussion.
 
 ## Schedule & Logistics
+- [Spring 2026](2026S.md)
 - [Winter 2026](2026W.md)
 - [Fall 2025](2025F.md)
 - [Summer 2025](2025Su.md)
