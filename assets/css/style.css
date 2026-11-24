@@ -156,8 +156,9 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   font-variant-numeric: tabular-nums;
 }
 
-/* second column is the speaker: the thing you are scanning for */
-.body td:nth-child(2) { color: var(--ink); font-weight: 600; }
+/* presenter columns are what you scan for; a script in the layout tags
+   every column headed "Presenter" with .who */
+.body td.who { color: var(--ink); font-weight: 600; }
 
 /* an affiliation or a time zone inside a cell steps back out of the bold and
    takes its own line, so a long name never wraps through the middle of it */
@@ -170,7 +171,6 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .body td:last-child { padding-right: 0; }
 
 /* home-page term list: the term is the link, topics stay in plain body grey */
-.body table.terms td:nth-child(2) { color: var(--text); font-weight: 400; }
 
 /* ---------- phones ---------- */
 

@@ -42,5 +42,18 @@
 
   </div>
 
+  <script>
+    // Bold every column whose header says "Presenter" (some terms have two).
+    document.querySelectorAll('.body table').forEach(function (t) {
+      t.querySelectorAll('th').forEach(function (th, i) {
+        if (/presenter/i.test(th.textContent)) {
+          t.querySelectorAll('tr').forEach(function (tr) {
+            var c = tr.children[i]; if (c && c.tagName === 'TD') c.classList.add('who');
+          });
+        }
+      });
+    });
+  </script>
+
 </body>
 </html>
