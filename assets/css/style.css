@@ -1,0 +1,192 @@
+/* ------------------------------------------------------------------
+   Econ Dynamics & Financial Markets Working Group (UChicago)
+   Same shell as demandap.github.io and booth-ap.github.io. Hierarchy from weight and spacing.
+   One accent: Chicago Maroon (#800000), used only for the site title
+   and for links, so maroon always means "clickable or home".
+   ------------------------------------------------------------------ */
+
+:root {
+  --ink:    #121212;   /* headings, emphasis, bold */
+  --text:   #666666;   /* body copy */
+  --nav:    #333333;   /* nav links */
+  --mute:   #999999;   /* affiliations, dates, current page */
+  --faint:  #c4c4c4;   /* list bullets */
+  --bg:     #ffffff;
+  --accent: #800000;   /* Chicago Maroon */
+  --font:   'Figtree', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 14px;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* a link in running text is darker than the copy around it. That contrast
+   is the only cue there is, so nothing else may borrow the ink colour. */
+.body a { color: var(--accent); font-weight: 500; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* ---------- shell ---------- */
+
+.page {
+  display: grid;
+  grid-template-columns: 184px minmax(0, 1fr);
+  gap: clamp(24px, 5vw, 58px);
+  max-width: 1000px;
+  padding: clamp(28px, 5vw, 56px) 20px 80px;
+  margin: 0;
+}
+
+/* ---------- sidebar ---------- */
+
+.side { }
+
+.site-title {
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: -0.005em;
+  line-height: 1.14;
+  color: var(--accent);
+  margin: 0;
+}
+.site-title a:hover { text-decoration: none; }
+
+.tagline {
+  font-size: 11px;
+  line-height: 1.45;
+  color: var(--mute);
+  margin: 7px 0 0;
+}
+
+.side nav ul { list-style: none; margin: 26px 0 0; padding: 0; }
+.side nav li { margin: 0 0 8px; }
+.side nav a { font-size: 14.5px; font-weight: 500; color: var(--nav); }
+
+/* the page you are on is marked in maroon */
+.side nav a.here { color: var(--accent); font-weight: 600; }
+
+/* ---------- content ---------- */
+
+.body { max-width: 680px; }
+
+.body > :first-child { margin-top: 0; }
+
+.body p { margin: 0 0 15px; }
+
+.body strong, .body b { color: var(--ink); font-weight: 600; }
+
+/* section labels sit inline with the text, like a run-in heading */
+.body h1, .body h2, .body h3, .body h4 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.62;
+  color: var(--ink);
+  margin: 22px 0 6px;
+}
+
+.body ul, .body ol { margin: 0 0 15px; padding: 0; list-style: none; }
+
+.body li { position: relative; padding-left: 15px; margin: 0 0 3px; }
+
+.body ul > li::before {
+  content: '';
+  position: absolute;
+  left: 2px; top: 9px;
+  width: 3px; height: 3px;
+  border-radius: 50%;
+  background: var(--faint);
+}
+
+.body ol { counter-reset: n; }
+.body ol > li { counter-increment: n; }
+.body ol > li::before {
+  content: counter(n) '.';
+  position: absolute;
+  left: 0; top: 0;
+  color: var(--mute);
+  font-variant-numeric: tabular-nums;
+}
+
+.body em { font-style: normal; color: var(--mute); }
+
+/* ---------- schedule tables ---------- */
+
+.table-scroll { overflow-x: auto; }
+
+.body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 18px;
+  font-size: 14px;
+}
+
+.body th {
+  text-align: left;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--mute);
+  padding: 0 18px 6px 0;
+}
+
+.body td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0 18px 4px 0;
+  color: var(--text);
+}
+
+/* first column is the date: quiet, figures aligned, never wrapping */
+.body td:first-child {
+  color: var(--mute);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+/* second column is the speaker: the thing you are scanning for */
+.body td:nth-child(2) { color: var(--ink); font-weight: 600; }
+
+/* an affiliation or a time zone inside a cell steps back out of the bold and
+   takes its own line, so a long name never wraps through the middle of it */
+.body td em { display: block; font-weight: 400; color: var(--mute); }
+
+/* date column: fixed width so every schedule table lines up */
+.body td:first-child, .body th:first-child { width: 110px; }
+
+
+.body td:last-child { padding-right: 0; }
+
+/* home-page term list: the term is the link, topics stay in plain body grey */
+.body table.terms td:nth-child(2) { color: var(--text); font-weight: 400; }
+
+/* ---------- phones ---------- */
+
+@media (max-width: 640px) {
+  .page {
+    grid-template-columns: 1fr;
+    gap: 26px;
+    padding: 28px 20px 64px;
+  }
+  .side nav ul {
+    margin-top: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 18px;
+  }
+  .side nav li { margin: 0 0 8px; }
+  .body { max-width: none; }
+  .body td, .body th { padding-right: 14px; }
+}

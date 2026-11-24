@@ -1,2 +1,24 @@
-theme: jekyll-theme-minimal
 title: Econ Dynamics & Financial Markets Working Group
+tagline: A weekly working group on macroeconomics and finance
+description: The Economic Dynamics and Financial Markets (EDFM) Working Group is a weekly session in which students present their work in topics primarily in macroeconomics and finance, broadly speaking.
+url: https://econdynamics.github.io
+
+# Left-hand navigation. When a new term starts: add its schedule page here
+# and drop the oldest term from the list. Every term stays linked from the home page.
+nav:
+  - title: Home
+    url: /
+  - title: Spring 2026
+    url: /2026S.html
+  - title: Winter 2026
+    url: /2026W.html
+  - title: Fall 2025
+    url: /2025F.html
+  - title: All terms
+    url: /#schedule--logistics
+
+defaults:
+  - scope: { path: "" }
+    values: { layout: "default" }
+
+exclude: [README.md, Gemfile, Gemfile.lock]
